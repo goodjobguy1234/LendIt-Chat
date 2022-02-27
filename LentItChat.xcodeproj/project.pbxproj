@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884EEAB4AC279ABDE9821134 /* Pods_LentItChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0D5CC224633752FD79922A5 /* Pods_LentItChat.framework */; };
 		FA3B783427CA8C6B00CE1842 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B783327CA8C6B00CE1842 /* AppDelegate.swift */; };
 		FA3B783627CA8C6B00CE1842 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B783527CA8C6B00CE1842 /* SceneDelegate.swift */; };
 		FA3B783827CA8C6B00CE1842 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3B783727CA8C6B00CE1842 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		39FA9D8BC8E7A60B9148F87C /* Pods-LentItChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentItChat.debug.xcconfig"; path = "Target Support Files/Pods-LentItChat/Pods-LentItChat.debug.xcconfig"; sourceTree = "<group>"; };
+		A0D5CC224633752FD79922A5 /* Pods_LentItChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LentItChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A0D6E0FAA0398E5F0E150F /* Pods-LentItChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LentItChat.release.xcconfig"; path = "Target Support Files/Pods-LentItChat/Pods-LentItChat.release.xcconfig"; sourceTree = "<group>"; };
 		FA3B783027CA8C6B00CE1842 /* LentItChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LentItChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3B783327CA8C6B00CE1842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3B783527CA8C6B00CE1842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				884EEAB4AC279ABDE9821134 /* Pods_LentItChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44B91374686441DA1953AFB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0D5CC224633752FD79922A5 /* Pods_LentItChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6FBF70EC0B98F26C87C3366D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39FA9D8BC8E7A60B9148F87C /* Pods-LentItChat.debug.xcconfig */,
+				F6A0D6E0FAA0398E5F0E150F /* Pods-LentItChat.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA3B782727CA8C6B00CE1842 = {
 			isa = PBXGroup;
 			children = (
 				FA3B783227CA8C6B00CE1842 /* LentItChat */,
 				FA3B783127CA8C6B00CE1842 /* Products */,
+				6FBF70EC0B98F26C87C3366D /* Pods */,
+				44B91374686441DA1953AFB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA3B784427CA8C6D00CE1842 /* Build configuration list for PBXNativeTarget "LentItChat" */;
 			buildPhases = (
+				69AB080F9BD25306A2EF1F57 /* [CP] Check Pods Manifest.lock */,
 				FA3B782C27CA8C6B00CE1842 /* Sources */,
 				FA3B782D27CA8C6B00CE1842 /* Frameworks */,
 				FA3B782E27CA8C6B00CE1842 /* Resources */,
+				9398ECB5F7969299F1269408 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		69AB080F9BD25306A2EF1F57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LentItChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9398ECB5F7969299F1269408 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LentItChat/Pods-LentItChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LentItChat/Pods-LentItChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LentItChat/Pods-LentItChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA3B782C27CA8C6B00CE1842 /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		FA3B784527CA8C6D00CE1842 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39FA9D8BC8E7A60B9148F87C /* Pods-LentItChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		FA3B784627CA8C6D00CE1842 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6A0D6E0FAA0398E5F0E150F /* Pods-LentItChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

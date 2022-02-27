@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		163E7DB684008A8442FD035C8A29F444 /* MultilineTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A0B2E72A78837A297EDBE4304EB797 /* MultilineTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C6F96D95A3D5D00EB9F0115BC9BB4E0 /* MultilineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94BE2AC6A030ADFF173A106474B66369 /* MultilineTextField.swift */; };
+		27C7F07D670345C63E81BAAA1EB3A45B /* Pods-LentItChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D684B4DC9E21F5D3D3CD7EF6BAB088A /* Pods-LentItChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7AEF46C2A710FC39137ADC2FF017545F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		7C1987ABB2B5BD8F76875335D9B038EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		9450F60C1DBFDC4B35F36F7AC253F547 /* MultilineTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE30BE7978B696374DB240D3B5F56B2 /* MultilineTextField-dummy.m */; };
+		A31ADEA71DAC459DF67F7C6560CA2A5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		ACCD6ABB177E49460C6D6878F5A67D4F /* Pods-LentItChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DF1E4F05B85D22F4E60C8BE47B8D01D /* Pods-LentItChat-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10A008CEE0460E8B90E27D46FC56FAEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E4C5518BF19B2CB8B0A5DC22C926A11;
+			remoteInfo = MultilineTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		045A96648FB64B3391E3D5F203391D76 /* Pods-LentItChat-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LentItChat-Info.plist"; sourceTree = "<group>"; };
+		0D04501C97E68E376442A07241A66134 /* MultilineTextField */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MultilineTextField; path = MultilineTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA85A53ED91E6BF2EEF798C5D02761D /* Pods-LentItChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LentItChat.release.xcconfig"; sourceTree = "<group>"; };
+		61CFA5DA1D9F04257F021AED84EE3E10 /* Pods-LentItChat */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LentItChat"; path = Pods_LentItChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D684B4DC9E21F5D3D3CD7EF6BAB088A /* Pods-LentItChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LentItChat-umbrella.h"; sourceTree = "<group>"; };
+		8033D10B537C0CFF457CF9413CA561D3 /* MultilineTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultilineTextField-prefix.pch"; sourceTree = "<group>"; };
+		8C2E24D47DAFC46FB5BDCC765572852F /* Pods-LentItChat-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LentItChat-acknowledgements.plist"; sourceTree = "<group>"; };
+		8DF1E4F05B85D22F4E60C8BE47B8D01D /* Pods-LentItChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LentItChat-dummy.m"; sourceTree = "<group>"; };
+		8E963E3B703440C8B77EB192EE4817B3 /* MultilineTextField.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultilineTextField.release.xcconfig; sourceTree = "<group>"; };
+		9058EECFB20AB3278E4AC25B6C12115D /* Pods-LentItChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LentItChat.debug.xcconfig"; sourceTree = "<group>"; };
+		9115BF572FFA1EE6D483DACA5CCF9780 /* MultilineTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MultilineTextField.modulemap; sourceTree = "<group>"; };
+		94BE2AC6A030ADFF173A106474B66369 /* MultilineTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultilineTextField.swift; path = Sources/MultilineTextField/MultilineTextField.swift; sourceTree = "<group>"; };
+		9BE65E5602FBCA3AF046553C6B08F88A /* Pods-LentItChat-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LentItChat-frameworks.sh"; sourceTree = "<group>"; };
+		9C183F2F7A4ABE629B128C5AD50288DC /* MultilineTextField-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MultilineTextField-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0D913C25A0F4480E16980868FFD5AD6 /* Pods-LentItChat-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LentItChat-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A8A0B2E72A78837A297EDBE4304EB797 /* MultilineTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MultilineTextField-umbrella.h"; sourceTree = "<group>"; };
+		BFC0B7B53789F136DAF8BC04C4AF9053 /* Pods-LentItChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LentItChat.modulemap"; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D9E17594F7CEA250644F0B746ADF1344 /* MultilineTextField.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MultilineTextField.debug.xcconfig; sourceTree = "<group>"; };
+		DEE30BE7978B696374DB240D3B5F56B2 /* MultilineTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MultilineTextField-dummy.m"; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3407C5107B5BFCB45C9DEB2BC574C249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A31ADEA71DAC459DF67F7C6560CA2A5E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8008D58D70F5C0445104BFC1C36CD67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AEF46C2A710FC39137ADC2FF017545F /* Foundation.framework in Frameworks */,
+				7C1987ABB2B5BD8F76875335D9B038EB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		263F3A008F16CA350C7D5B34F4196B96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B86B6C3F17BA24F94F3EB14F85412FD /* MultilineTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		324E703094B4799FF1B7B9CF53FF36EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D04501C97E68E376442A07241A66134 /* MultilineTextField */,
+				61CFA5DA1D9F04257F021AED84EE3E10 /* Pods-LentItChat */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7B86B6C3F17BA24F94F3EB14F85412FD /* MultilineTextField */ = {
+			isa = PBXGroup;
+			children = (
+				94BE2AC6A030ADFF173A106474B66369 /* MultilineTextField.swift */,
+				A4696F2A582FC39EF7CBA8EEE9B3B2B8 /* Support Files */,
+			);
+			name = MultilineTextField;
+			path = MultilineTextField;
+			sourceTree = "<group>";
+		};
+		A4696F2A582FC39EF7CBA8EEE9B3B2B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9115BF572FFA1EE6D483DACA5CCF9780 /* MultilineTextField.modulemap */,
+				DEE30BE7978B696374DB240D3B5F56B2 /* MultilineTextField-dummy.m */,
+				9C183F2F7A4ABE629B128C5AD50288DC /* MultilineTextField-Info.plist */,
+				8033D10B537C0CFF457CF9413CA561D3 /* MultilineTextField-prefix.pch */,
+				A8A0B2E72A78837A297EDBE4304EB797 /* MultilineTextField-umbrella.h */,
+				D9E17594F7CEA250644F0B746ADF1344 /* MultilineTextField.debug.xcconfig */,
+				8E963E3B703440C8B77EB192EE4817B3 /* MultilineTextField.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MultilineTextField";
+			sourceTree = "<group>";
+		};
+		B754ECCD9230ED86CB6E04BFC5A3022A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E14C6C7D2DAC8C6EF192DF549895798C /* Pods-LentItChat */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				263F3A008F16CA350C7D5B34F4196B96 /* Pods */,
+				324E703094B4799FF1B7B9CF53FF36EE /* Products */,
+				B754ECCD9230ED86CB6E04BFC5A3022A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E14C6C7D2DAC8C6EF192DF549895798C /* Pods-LentItChat */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0B7B53789F136DAF8BC04C4AF9053 /* Pods-LentItChat.modulemap */,
+				A0D913C25A0F4480E16980868FFD5AD6 /* Pods-LentItChat-acknowledgements.markdown */,
+				8C2E24D47DAFC46FB5BDCC765572852F /* Pods-LentItChat-acknowledgements.plist */,
+				8DF1E4F05B85D22F4E60C8BE47B8D01D /* Pods-LentItChat-dummy.m */,
+				9BE65E5602FBCA3AF046553C6B08F88A /* Pods-LentItChat-frameworks.sh */,
+				045A96648FB64B3391E3D5F203391D76 /* Pods-LentItChat-Info.plist */,
+				7D684B4DC9E21F5D3D3CD7EF6BAB088A /* Pods-LentItChat-umbrella.h */,
+				9058EECFB20AB3278E4AC25B6C12115D /* Pods-LentItChat.debug.xcconfig */,
+				5EA85A53ED91E6BF2EEF798C5D02761D /* Pods-LentItChat.release.xcconfig */,
+			);
+			name = "Pods-LentItChat";
+			path = "Target Support Files/Pods-LentItChat";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		450FE1CBDC910EC1F92107336A39853F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27C7F07D670345C63E81BAAA1EB3A45B /* Pods-LentItChat-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4E83C6C090F52078B61069F83963933 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163E7DB684008A8442FD035C8A29F444 /* MultilineTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4020AD6BF8ADD6F839156177A5A46B67 /* Pods-LentItChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23CE3C441C4073F130210CA50E562551 /* Build configuration list for PBXNativeTarget "Pods-LentItChat" */;
+			buildPhases = (
+				450FE1CBDC910EC1F92107336A39853F /* Headers */,
+				35FBE6CAD9E96F928FAFA473E6740CD9 /* Sources */,
+				3407C5107B5BFCB45C9DEB2BC574C249 /* Frameworks */,
+				7982959506EB6F127D6B4A86D264C3FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7569E184FC1500EA3538E79E3470B018 /* PBXTargetDependency */,
+			);
+			name = "Pods-LentItChat";
+			productName = Pods_LentItChat;
+			productReference = 61CFA5DA1D9F04257F021AED84EE3E10 /* Pods-LentItChat */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E4C5518BF19B2CB8B0A5DC22C926A11 /* MultilineTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D1CF9386FAF2A5866129628BDCDBE0B /* Build configuration list for PBXNativeTarget "MultilineTextField" */;
+			buildPhases = (
+				B4E83C6C090F52078B61069F83963933 /* Headers */,
+				F3596A904C74F919F10B79487953EE09 /* Sources */,
+				B8008D58D70F5C0445104BFC1C36CD67 /* Frameworks */,
+				F33F35BA4E6C1A8328E525438E7DD1A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultilineTextField;
+			productName = MultilineTextField;
+			productReference = 0D04501C97E68E376442A07241A66134 /* MultilineTextField */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 324E703094B4799FF1B7B9CF53FF36EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E4C5518BF19B2CB8B0A5DC22C926A11 /* MultilineTextField */,
+				4020AD6BF8ADD6F839156177A5A46B67 /* Pods-LentItChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7982959506EB6F127D6B4A86D264C3FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F33F35BA4E6C1A8328E525438E7DD1A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35FBE6CAD9E96F928FAFA473E6740CD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACCD6ABB177E49460C6D6878F5A67D4F /* Pods-LentItChat-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3596A904C74F919F10B79487953EE09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6F96D95A3D5D00EB9F0115BC9BB4E0 /* MultilineTextField.swift in Sources */,
+				9450F60C1DBFDC4B35F36F7AC253F547 /* MultilineTextField-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7569E184FC1500EA3538E79E3470B018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MultilineTextField;
+			target = 6E4C5518BF19B2CB8B0A5DC22C926A11 /* MultilineTextField */;
+			targetProxy = 10A008CEE0460E8B90E27D46FC56FAEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		34EE7E099BCFA3951DDF4A98347129AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9058EECFB20AB3278E4AC25B6C12115D /* Pods-LentItChat.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LentItChat/Pods-LentItChat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LentItChat/Pods-LentItChat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4214E6946993DF02ED98D89047C64016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		63CFB0DF5313C677FA655A7EE7D26561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E963E3B703440C8B77EB192EE4817B3 /* MultilineTextField.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MultilineTextField/MultilineTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultilineTextField/MultilineTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MultilineTextField/MultilineTextField.modulemap";
+				PRODUCT_MODULE_NAME = MultilineTextField;
+				PRODUCT_NAME = MultilineTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		700AE56CC4F6DCD25BF09434BEC82CC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9E17594F7CEA250644F0B746ADF1344 /* MultilineTextField.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MultilineTextField/MultilineTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MultilineTextField/MultilineTextField-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MultilineTextField/MultilineTextField.modulemap";
+				PRODUCT_MODULE_NAME = MultilineTextField;
+				PRODUCT_NAME = MultilineTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF299063B142F738B7E7C7839FDBA364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA85A53ED91E6BF2EEF798C5D02761D /* Pods-LentItChat.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LentItChat/Pods-LentItChat-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LentItChat/Pods-LentItChat.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD85FD90473CFBE797E4264E7BBC70AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		23CE3C441C4073F130210CA50E562551 /* Build configuration list for PBXNativeTarget "Pods-LentItChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34EE7E099BCFA3951DDF4A98347129AC /* Debug */,
+				AF299063B142F738B7E7C7839FDBA364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4214E6946993DF02ED98D89047C64016 /* Debug */,
+				CD85FD90473CFBE797E4264E7BBC70AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D1CF9386FAF2A5866129628BDCDBE0B /* Build configuration list for PBXNativeTarget "MultilineTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				700AE56CC4F6DCD25BF09434BEC82CC8 /* Debug */,
+				63CFB0DF5313C677FA655A7EE7D26561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
