@@ -14,6 +14,9 @@
 		FA3B783B27CA8C6B00CE1842 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3B783927CA8C6B00CE1842 /* Main.storyboard */; };
 		FA3B783D27CA8C6D00CE1842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA3B783C27CA8C6D00CE1842 /* Assets.xcassets */; };
 		FA3B784027CA8C6D00CE1842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3B783E27CA8C6D00CE1842 /* LaunchScreen.storyboard */; };
+		FACF3D0527CCBA2E0080102A /* CustomerBubbleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF3D0427CCBA2E0080102A /* CustomerBubbleTableViewCell.swift */; };
+		FACF3D0727CCBC830080102A /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF3D0627CCBC830080102A /* UserTableViewCell.swift */; };
+		FACF3D0A27CCFE910080102A /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACF3D0927CCFE910080102A /* ChatModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		FA3B783C27CA8C6D00CE1842 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA3B783F27CA8C6D00CE1842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA3B784127CA8C6D00CE1842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FACF3D0427CCBA2E0080102A /* CustomerBubbleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerBubbleTableViewCell.swift; sourceTree = "<group>"; };
+		FACF3D0627CCBC830080102A /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		FACF3D0927CCFE910080102A /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,6 @@
 				39FA9D8BC8E7A60B9148F87C /* Pods-LentItChat.debug.xcconfig */,
 				F6A0D6E0FAA0398E5F0E150F /* Pods-LentItChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +86,8 @@
 		FA3B783227CA8C6B00CE1842 /* LentItChat */ = {
 			isa = PBXGroup;
 			children = (
+				FACF3D0827CCF8600080102A /* chatModel */,
+				FACF3CFF27CCB9C80080102A /* chatCell */,
 				FA3B783327CA8C6B00CE1842 /* AppDelegate.swift */,
 				FA3B783527CA8C6B00CE1842 /* SceneDelegate.swift */,
 				FA3B783727CA8C6B00CE1842 /* ViewController.swift */,
@@ -90,6 +97,23 @@
 				FA3B784127CA8C6D00CE1842 /* Info.plist */,
 			);
 			path = LentItChat;
+			sourceTree = "<group>";
+		};
+		FACF3CFF27CCB9C80080102A /* chatCell */ = {
+			isa = PBXGroup;
+			children = (
+				FACF3D0427CCBA2E0080102A /* CustomerBubbleTableViewCell.swift */,
+				FACF3D0627CCBC830080102A /* UserTableViewCell.swift */,
+			);
+			path = chatCell;
+			sourceTree = "<group>";
+		};
+		FACF3D0827CCF8600080102A /* chatModel */ = {
+			isa = PBXGroup;
+			children = (
+				FACF3D0927CCFE910080102A /* ChatModel.swift */,
+			);
+			path = chatModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,8 +232,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA3B783827CA8C6B00CE1842 /* ViewController.swift in Sources */,
+				FACF3D0527CCBA2E0080102A /* CustomerBubbleTableViewCell.swift in Sources */,
 				FA3B783427CA8C6B00CE1842 /* AppDelegate.swift in Sources */,
 				FA3B783627CA8C6B00CE1842 /* SceneDelegate.swift in Sources */,
+				FACF3D0727CCBC830080102A /* UserTableViewCell.swift in Sources */,
+				FACF3D0A27CCFE910080102A /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
