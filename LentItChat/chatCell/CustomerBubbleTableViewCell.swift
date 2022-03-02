@@ -10,7 +10,7 @@ import UIKit
 class CustomerBubbleTableViewCell: UITableViewCell {
 
     @IBOutlet var chatText: UILabel!
-    static let identifield = "customerCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

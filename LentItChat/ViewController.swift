@@ -7,43 +7,63 @@
 
 import UIKit
 import MultilineTextField
+import FirebaseCore
+import FirebaseFirestore
+import FirebaseFirestoreSwift
+
 
 class ViewController: UIViewController {
-
+    var db: Firestore!
+    var chatRef: CollectionReference!
     @IBOutlet var chatTableView: UITableView!
     @IBOutlet var sendChatBtn: UIButton!
     @IBOutlet var chatTextFieldHeight: NSLayoutConstraint!
     @IBOutlet var chatTextField: MultilineTextField!
     private let default_height = 45.0
+    private var chatListener: ListenerRegistration? = nil
     var phoneNumber = "0639489842"
     
-    var chats: [ChatModel] = [
-        ChatModel(type: .user, textString: "Hello, sir where should we meet"),
-        ChatModel(type: .customer, textString: "Hi, let meet at Assumption university on 3 march."),
-        ChatModel(textString: "Okay and what time is it?"),
-        ChatModel(type: .customer, textString: "at 12 pm. How is it sound?"),
-        ChatModel(textString: "Can it be 14:30 pm? I not sure, I can arrive at 12"),
-        ChatModel(type: .customer, textString: "Sureee"),
-        ChatModel(textString: "Thank you so nuch, see ya!"),
-        ChatModel(type: .customer, textString: "See you! and have a nice day")
-    ]
+    var itemID = "8eGJu4tFr8qevxUfKQUP"  // itemID for query to find which chatID talk about borrowing this item
+    
+    //senderID is current login user
+//    var senderID = "A9KshCKMdDMhJ5sfzOL15ltVwjG3"
+//    var senderName = "Thor are nimanong"
+    var senderID = "fVFtKuDvU3cZueU0EuAWifAX0S62"
+    var senderName = "Aiden Zaw"
+    
+    // for another person who receive chat
+//    var receiverID = "fVFtKuDvU3cZueU0EuAWifAX0S62"
+//    var receiverName = "Aiden Zaw"
+    var receiverID = "A9KshCKMdDMhJ5sfzOL15ltVwjG3"
+      var receiverName = "Thor are nimanong"
+    
+    
+    var chats: [ChatModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       setupChatNav()
+        db = Firestore.firestore()
+        chatRef = db.collection("Chats")
+        setupChatNav()
+        
         chatTextField.delegate = self
         
         chatTableView.delegate = self
         chatTableView.dataSource = self
         chatTableView.showsVerticalScrollIndicator = false
         
-        // To scroll to the buttom when open the chat
-        chatTableView.layoutIfNeeded()
-        chatTableView.setContentOffset(CGPoint(x: 0, y: chatTableView.contentSize.height - chatTableView.frame.height), animated: true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        readMessageListener()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        chatListener?.remove()
     }
     
     func setupChatNav() {
-        navigationItem.title = "Chat"
+        navigationItem.title = senderName
         
         let phoneButton = UIButton.init(frame: CGRect.init(x: 0, y: 0, width: 24, height: 24))
         phoneButton.addTarget(self, action: #selector(didTapPhoneButton), for: .touchUpInside)
@@ -74,22 +94,84 @@ class ViewController: UIViewController {
     @IBAction func onClickSend(_ sender: Any) {
         
         if(!chatTextField.text.isEmpty) {
-            let newChat = ChatModel(textString: chatTextField.text)
-            chats.append(newChat)
-            chatTextField.text = ""
-            chatTextField.placeholder = ""
-            UIView.animate(withDuration: 0.3) {
-                self.chatTextFieldHeight.constant = self.default_height
-                self.view.layoutIfNeeded()
+            let text = chatTextField.text!
+            if (addMessage(text: text)) {
+                chatTextField.text = ""
+                chatTextField.placeholder = ""
+                UIView.animate(withDuration: 0.3) {
+                    self.chatTextFieldHeight.constant = self.default_height
+                    self.view.layoutIfNeeded()
+                }
             }
-            
-            
-            chatTableView.reloadData()
-            chatTableView.layoutIfNeeded()
-            chatTableView.setContentOffset(CGPoint(x: 0, y: chatTableView.contentSize.height - chatTableView.frame.height), animated: true)
         }
     }
     
+    func addMessage(text: String) -> Bool {
+        var canPostMessage = true
+        chatRef.whereField("itemID", isEqualTo: itemID).limit(to: 2).getDocuments(completion: { (querySnapshot, err) in
+            if err != nil {
+                print("Error")
+                canPostMessage = false
+            }
+            
+            if let messageCollection = querySnapshot?.documents[0].reference.collection("messages") {
+                
+                let newChatData = createChatFireStoreData(body: text, senderID: self.senderID, receiverID: self.receiverID, receiverName: self.receiverName, senderName: self.senderName, timeStamp: Timestamp(date: Date()))
+                                                          
+                messageCollection.addDocument(data: newChatData) { err in
+                    if err != nil {
+                        print("Error in writing data")
+                        canPostMessage = false
+                    }
+                }
+            }
+            
+        })
+            
+        return canPostMessage
+    }
+    
+    func readChat(querySnapshot: QuerySnapshot) {
+        let messageCollection = querySnapshot.documents[0].reference.collection("messages")
+        chatListener = messageCollection.order(by: "timeStamp", descending: false ).addSnapshotListener({ (querySnapshot, err) in
+            guard let documents = querySnapshot?.documents else {
+                print("Error fetching documents: \(err!)")
+                return
+            }
+            self.chats = []
+            
+            documents.forEach { QueryDocumentSnapshot in
+                let data = QueryDocumentSnapshot.data()
+                if let chatData = ChatModel(data: data, currentLoginID: self.senderID) {
+                    self.chats.append(chatData)
+                }
+            }
+            self.chatTableView.reloadData()
+            self.chatTableView.layoutIfNeeded()
+            self.chatTableView.setContentOffset(CGPoint(x: 0, y: self.chatTableView.contentSize.height - self.chatTableView.frame.height), animated: true)
+        })
+    }
+    
+    func readMessageListener() {
+        let chatDocument = chatRef.whereField("itemID", isEqualTo: itemID).limit(to: 2)
+    
+        chatDocument.getDocuments { (querySnapshot, err) in
+            if err != nil {
+                print("Error")
+                return
+            }
+            
+            if let doc = querySnapshot {
+                if doc.count == 0 {
+                    self.chatRef.addDocument(data: ["itemID": self.itemID])
+                    return self.readMessageListener()
+                } else {
+                    self.readChat(querySnapshot: doc)
+                }
+              
+            }
+        }
+    }
 }
 
 extension UITextView {
@@ -124,6 +206,10 @@ extension ViewController: UITextViewDelegate {
                 self.chatTextFieldHeight.constant = self.default_height
                 self.view.layoutIfNeeded()
             }
+            
+            self.chatTableView.layoutIfNeeded()
+            self.chatTableView.setContentOffset(CGPoint(x: 0, y: self.chatTableView.contentSize.height - self.chatTableView.frame.height), animated: true)
+            
         }
     }
 }

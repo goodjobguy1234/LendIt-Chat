@@ -7,5 +7,7 @@ target 'LentItChat' do
 
   # Pods for LentItChat
 pod 'MultilineTextField'
+pod 'Firebase/Firestore'
+pod 'FirebaseFirestoreSwift'
 
 end

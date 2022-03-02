@@ -9,7 +9,7 @@ import UIKit
 
 class UserTableViewCell: UITableViewCell {
     @IBOutlet var userText: UILabel!
-    static let identifield = "userCell"
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
